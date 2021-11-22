@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    @apply flex
+    flex-row;
+}
+
+.colorButton {
+    @apply w-6
+    h-4
+    m-2;
+}
+
+.colorButton:focus {
+    border-bottom: 3px solid red;
+}
+
+input[type='color'] {
+    background: linear-gradient(
+        to bottom right,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        violet
+    );
+
+    display: block;
+    width: 40px;
+    height: 30px;
+    border: none;
+}

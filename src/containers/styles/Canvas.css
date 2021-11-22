@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    @apply flex 
+    flex-col 
+    justify-center 
+    items-center;
+}
+
+.mainCanvas {
+    @apply h-12
+    w-12
+    border-8
+    border-black
+    border-double
+    flex
+    content-center
+    justify-center
+    m-2;
+}

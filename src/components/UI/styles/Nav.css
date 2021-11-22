@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navBar {
+    @apply flex 
+    justify-between 
+    items-center 
+    h-16 
+    bg-white 
+    text-black
+    relative 
+    shadow-sm 
+    bg-orangebrown;
+}
+
+.title {
+    @apply flex 
+    justify-center 
+    items-center;
+}
+
+.links {
+    @apply flex 
+    justify-end 
+    space-x-5 
+    px-2;
+}
