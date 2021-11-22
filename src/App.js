@@ -1,4 +1,3 @@
-import './App.css';
 import Canvas from './containers/Canvas';
 import Nav from './components/UI/Nav';
 import Footer from './components/UI/Footer';
