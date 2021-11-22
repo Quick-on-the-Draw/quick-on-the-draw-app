@@ -19,12 +19,12 @@ const navBar = `
 flex
 justify-between 
 items-center 
-h-24
+h-16
 bg-white 
 text-black 
 relative 
 shadow-sm
-bg-green-200
+bg-orangebrown
 `;
 
 const title = `
