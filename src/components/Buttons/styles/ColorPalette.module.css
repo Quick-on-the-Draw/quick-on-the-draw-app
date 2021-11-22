@@ -1,12 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .container {
-    display: flex;
-    flex-direction: row;
+    @apply flex
+    flex-row;
 }
 
 .colorButton {
-    width: 30px;
-    height: 20px;
-    margin: 5px;
+    @apply w-6
+    h-4
+    m-2;
 }
 
 .colorButton:focus {
