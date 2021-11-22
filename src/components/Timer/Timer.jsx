@@ -48,13 +48,23 @@ const Timer = () => {
           <h1>Start Timer</h1>
         ) : (
           <h1>
-            {minutes}:{seconds < 10 ? `0${seconds}` : seconds} remaining
+            {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
           </h1>
         )}
       </div>
-      <button onClick={toggleActive}>{isActive ? 'Stop' : 'Start'}</button>
+      <button className={timeBtn} onClick={toggleActive}>
+        {isActive ? 'Stop' : 'Start'}
+      </button>
     </>
   );
 };
+
+const timeBtn = `
+rounded-lg 
+px-4 
+py-2 
+bg-green-700 
+text-green-100
+`;
 
 export default Timer;

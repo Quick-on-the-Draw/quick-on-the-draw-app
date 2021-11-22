@@ -4,10 +4,9 @@ import Nav from './components/UI/Nav';
 import Footer from './components/UI/Footer';
 import Home from './containers/Home';
 import {
-  BrowserRouter as Router,
+  //   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
   BrowserRouter,
 } from 'react-router-dom';
 
