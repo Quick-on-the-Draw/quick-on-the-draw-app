@@ -9,8 +9,9 @@ const Nav = () => {
                 <h2>Quick on the Draw!</h2>
             </div>
             <div className='links'>
-                <Link to='/draw'>Draw!</Link>
                 <Link to='/'>Home</Link>
+                <Link to='/draw'>Draw!</Link>
+                <Link to='/gallery'>Gallery</Link>
             </div>
         </div>
     );
