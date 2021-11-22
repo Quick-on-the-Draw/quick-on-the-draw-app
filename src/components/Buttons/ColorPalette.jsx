@@ -1,7 +1,7 @@
 import React from 'react';
 import style from '../Buttons/Buttons.module.css';
 
-const ColorPallette = ({ pickColor, brushColor, setBrushColor }) => {
+const ColorPalette = ({ pickColor, brushColor, setBrushColor }) => {
     const colors = [
         '#892301',
         '#C8752D',
@@ -46,4 +46,4 @@ const ColorPallette = ({ pickColor, brushColor, setBrushColor }) => {
     );
 };
 
-export default ColorPallette;
+export default ColorPalette;
