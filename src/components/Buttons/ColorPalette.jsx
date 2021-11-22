@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../Buttons/Buttons.module.css';
+import style from './styles/ColorPalette.module.css';
 
 const ColorPalette = ({ pickColor, brushColor, setBrushColor }) => {
     const colors = [

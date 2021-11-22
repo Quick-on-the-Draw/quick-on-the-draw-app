@@ -4,6 +4,7 @@ import BrushSize from '../components/Buttons/BrushSize';
 import ColorPalette from '../components/Buttons/ColorPalette';
 import ControlButtons from '../components/Buttons/ControlButtons';
 import Timer from '../components/Timer/Timer';
+import './styles/Canvas.css';
 
 const Canvas = () => {
     const [brushColor, setBrushColor] = useState('#000000');
@@ -33,12 +34,12 @@ const Canvas = () => {
     };
 
     return (
-        <div className={container}>
+        <div className='container'>
             <Timer />
             <div>
                 <CanvasDraw
                     {...canvasProps}
-                    className={mainCanvas}
+                    className='mainCanvas'
                     ref={canvasRef}
                 />
             </div>
@@ -56,25 +57,5 @@ const Canvas = () => {
         </div>
     );
 };
-
-const container = `
-flex 
-flex-col 
-justify-center 
-items-center
-`;
-
-const mainCanvas = `
-h-12
-w-12
-border-8
-border-black
-border-double
-
-flex
-content-center
-justify-center
-m-2
-`;
 
 export default Canvas;
