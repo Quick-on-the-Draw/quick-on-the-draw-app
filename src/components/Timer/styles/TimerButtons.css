@@ -40,7 +40,3 @@ input[type='radio']:checked + label {
     justify-center
     cursor-pointer;
 }
-
-.finalCountdown {
-    @apply text-4xl;
-}

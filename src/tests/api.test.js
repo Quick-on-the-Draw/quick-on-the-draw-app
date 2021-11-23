@@ -1,6 +1,6 @@
 import { addDrawing, getDrawings } from '../utils/apiFetch';
 
-describe('Api tests', () => {
+describe.skip('Api tests', () => {
     const newDrawing = {
         title: 'Test Drawing 1',
         createdDate: '1999-01-09T08:00:00.000Z',
