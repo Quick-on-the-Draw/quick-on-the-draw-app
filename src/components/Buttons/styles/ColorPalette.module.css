@@ -3,33 +3,33 @@
 @tailwind utilities;
 
 .container {
-    @apply flex
+  @apply flex
     flex-row;
 }
 
 .colorButton {
-    @apply w-6
+  @apply w-6
     h-4
     m-2;
 }
 
 .colorButton:focus {
-    border-bottom: 3px solid red;
+  border-bottom: 3px solid red;
 }
 
 input[type='color'] {
-    background: linear-gradient(
-        to bottom right,
-        red,
-        orange,
-        yellow,
-        green,
-        blue,
-        violet
-    );
+  background: linear-gradient(
+    to bottom right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    violet
+  );
 
-    display: block;
-    width: 40px;
-    height: 30px;
-    border: none;
+  display: block;
+  width: 40px;
+  height: 30px;
+  border: none;
 }
