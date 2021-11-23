@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/ControlButtons.css';
 
-const ControlButtons = ({ handleUndo, handleClear, handleSave }) => {
+const ControlButtons = ({ handleUndo, handleClear }) => {
   return (
     <>
       <button className="canvasBtn" onClick={handleUndo}>
@@ -9,9 +9,6 @@ const ControlButtons = ({ handleUndo, handleClear, handleSave }) => {
       </button>
       <button className="canvasBtn" onClick={handleClear}>
         Clear
-      </button>
-      <button className="canvasBtn" onClick={handleSave}>
-        Save
       </button>
     </>
   );

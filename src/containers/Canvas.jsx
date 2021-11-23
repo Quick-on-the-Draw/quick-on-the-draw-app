@@ -33,10 +33,6 @@ const Canvas = () => {
     canvasRef.current.clear();
   };
 
-  const handleSave = () => {
-    const saveImg = canvasRef.current.getSaveData();
-    console.log(saveImg);
-  };
   return (
     <div className="container">
       <Timer />
@@ -49,11 +45,7 @@ const Canvas = () => {
           setBrushColor={setBrushColor}
         />
         <BrushSize setBrushSize={setBrushSize} />
-        <ControlButtons
-          handleUndo={handleUndo}
-          handleClear={handleClear}
-          handleSave={handleSave}
-        />
+        <ControlButtons handleUndo={handleUndo} handleClear={handleClear} />
       </div>
     </div>
   );
