@@ -11,52 +11,45 @@ const Canvas = () => {
     const [brushSize, setBrushSize] = useState(1);
     // const [loading, setLoading] = useState(true);
 
-    const canvasRef = useRef();
-    const canvasProps = {
-        lazyRadius: 0,
-        brushColor: brushColor,
-        brushRadius: brushSize,
-        hideInterface: true,
-        hideGrid: true,
-        canvasWidth: 700,
-        canvasHeight: 700,
-    };
+  const canvasRef = useRef();
+  const canvasProps = {
+    lazyRadius: 0,
+    brushColor: brushColor,
+    brushRadius: brushSize,
+    hideInterface: true,
+    hideGrid: true,
+    canvasWidth: 700,
+    canvasHeight: 700,
+  };
 
-    const handleColorChange = (color) => {
-        setBrushColor(color);
-    };
+  const handleColorChange = (color) => {
+    setBrushColor(color);
+  };
 
-    const handleUndo = () => {
-        canvasRef.current.undo();
-    };
+  const handleUndo = () => {
+    canvasRef.current.undo();
+  };
 
-    const handleClear = () => {
-        canvasRef.current.clear();
-    };
+  const handleClear = () => {
+    canvasRef.current.clear();
+  };
 
-    return (
-        <div className='container'>
-            <Timer />
-            <div>
-                <CanvasDraw
-                    {...canvasProps}
-                    className='mainCanvas'
-                    ref={canvasRef}
-                />
-            </div>
-            <div>
-                <ColorPalette
-                    pickColor={handleColorChange}
-                    setBrushColor={setBrushColor}
-                />
-                <BrushSize setBrushSize={setBrushSize} />
-                <ControlButtons
-                    handleUndo={handleUndo}
-                    handleClear={handleClear}
-                />
-            </div>
-        </div>
-    );
+  return (
+    <div className="container">
+      <Timer />
+      <div>
+        <CanvasDraw {...canvasProps} className="mainCanvas" ref={canvasRef} />
+      </div>
+      <div>
+        <ColorPalette
+          pickColor={handleColorChange}
+          setBrushColor={setBrushColor}
+        />
+        <BrushSize setBrushSize={setBrushSize} />
+        <ControlButtons handleUndo={handleUndo} handleClear={handleClear} />
+      </div>
+    </div>
+  );
 };
 
 export default Canvas;
