@@ -17,3 +17,8 @@ Built in Javascript - React, Node (if back end). Deployed on Netlify
 -Tailwind css
 -Craco
 -Supabase?
+
+#Deployment instructions
+clone down this and be repo
+npm i on both repos
+create .env file (use example)
