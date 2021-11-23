@@ -7,8 +7,9 @@ import Timer from '../components/Timer/Timer';
 import './styles/Canvas.css';
 
 const Canvas = () => {
-  const [brushColor, setBrushColor] = useState('#000000');
-  const [brushSize, setBrushSize] = useState(1);
+    const [brushColor, setBrushColor] = useState('#000000');
+    const [brushSize, setBrushSize] = useState(1);
+    // const [loading, setLoading] = useState(true);
 
   const canvasRef = useRef();
   const canvasProps = {

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './Timer.css';
+import TimerButtons from './TimerButtons';
+import './styles/Timer.css';
 
 const Timer = () => {
     const [seconds, setSeconds] = useState(0);
@@ -16,7 +17,6 @@ const Timer = () => {
     function handleTimeChange(e) {
         setTimeLimit(e.target.value);
         setMinutes(e.target.value);
-        console.log(e.target.value);
     }
 
     useEffect(() => {
@@ -57,43 +57,11 @@ const Timer = () => {
                     </h1>
                 )}
             </div>
-            <form className='formBtn' onChange={handleTimeChange}>
-                <h1>Change Timer:</h1>
-                <input
-                    className='radio'
-                    id='1'
-                    type='radio'
-                    name='time'
-                    value='1'
-                />
-                <label className='labels' htmlFor='1'>
-                    1
-                </label>
-                <input
-                    className='radio'
-                    id='5'
-                    type='radio'
-                    name='time'
-                    value='5'
-                    defaultChecked='checked'
-                />
-                <label className='labels' htmlFor='5'>
-                    5
-                </label>
-                <input
-                    className='radio'
-                    id='10'
-                    type='radio'
-                    name='time'
-                    value='10'
-                />
-                <label className='labels' htmlFor='10'>
-                    10
-                </label>
-            </form>
-            <button className='timeBtn' onClick={toggleActive}>
-                {isActive ? 'Stop' : 'Start'}
-            </button>
+            <TimerButtons
+                toggleActive={toggleActive}
+                handleTimeChange={handleTimeChange}
+                isActive={isActive}
+            />
         </>
     );
 };
