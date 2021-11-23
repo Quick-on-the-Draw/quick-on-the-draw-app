@@ -10,7 +10,7 @@ const ControlButtons = ({ handleUndo, handleClear }) => {
             <button className='canvasBtn' onClick={handleClear}>
                 Clear
             </button>
-            {/* <button className={canvasBtn}>Save</button> */}
+            {/* <button className='canvasBtn'>Save</button> */}
         </>
     );
 };
