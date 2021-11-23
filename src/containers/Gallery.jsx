@@ -26,11 +26,11 @@ const Gallery = () => {
                 url: 'google.com',
             },
         ];
-
-        setDrawings(drawingFetch)
-        .then(() => {
+        async function settingDrawingState() {
+            await setDrawings(drawingFetch);
             setLoading(false);
-        });
+        }
+        settingDrawingState();
     }, [timerFilter]);
 
     // WHEN BACK END IS WORKING USE BELOW AND REMOVE ABOVE
@@ -46,22 +46,22 @@ const Gallery = () => {
     //         });
     // }, [timerFilter]);
 
-    // function handleTimeChange(e) {
-    //     e.preventDefault
-    //     setLoading(true)
-    //     return setTimerFilter(e.target.value)
-    //     .then(() => {
-    //         setLoading(false);
-    //     });
-    // }
+    function handleTimeChange(e) {
+        async function setTimerState() {
+            await setLoading(true);
+            setTimerFilter(e.target.value);
+            setLoading(false);
+        }
+        setTimerState();
+    }
 
     if (loading) return 'LOADING';
 
     return (
         <main className='mainSection'>
             <h1>Gallery Page</h1>
-            {/* <GalleryButtons handleTimeChange={handleTimeChange} />
-            <GalleryList drawings={drawings} /> */}
+            <GalleryButtons handleTimeChange={handleTimeChange} />
+            <GalleryList drawings={drawings} />
         </main>
     );
 };
