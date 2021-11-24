@@ -3,10 +3,13 @@
 @tailwind utilities;
 
 .footerBar {
-    @apply h-24
+  @apply flex 
+    justify-between 
+    items-center 
+    h-16 
     bg-white 
-    text-black 
+    text-black
     relative 
-    shadow-sm
-    bg-green-200;
+    shadow-sm 
+    bg-orangebrown;
 }

@@ -3,20 +3,39 @@
 @tailwind utilities;
 
 .container {
-    @apply flex 
+  @apply flex 
     flex-col 
     justify-center 
     items-center;
 }
 
 .main {
-    @apply bg-scroll
+  @apply bg-scroll
     bg-center
     bg-cover;
 }
+.colorContainer {
+  @apply flex
+    flex-col;
+}
+
+.colorPalette_container {
+  @apply flex
+    flex-col;
+}
+
+.sideContainer {
+  @apply flex
+    flex-row-reverse;
+}
+
+.colorPalette {
+  @apply flex
+    flex-col;
+}
 
 .mainCanvas {
-    @apply h-12
+  @apply h-12
     w-12
     border-8
     border-black
