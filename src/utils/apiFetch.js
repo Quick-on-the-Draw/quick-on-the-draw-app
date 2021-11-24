@@ -1,20 +1,25 @@
-export async function addDrawing(drawing) {
-    const res = await fetch(
-        'https://quick-on-the-draw-be.herokuapp.com/api/v1/drawings',
-        {
-            method: 'POST',
-            headers: { 'Content-Type': 'Application/JSON' },
-            body: JSON.stringify(drawing),
-        }
-    );
-    const json = await res.json();
-    return json;
+import { drawDetailsFromBackend } from './dataUtils';
+// import fetch from 'node-fetch';
+
+export async function addDrawing(form) {
+  const res = await fetch(
+    'https://quick-on-the-draw-be.herokuapp.com/api/v1/drawings',
+    form,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'multipart/form-data' },
+    }
+  );
+  const json = await res.json();
+  return json;
 }
 
-export async function getDrawings() {
-    const res = await fetch(
-        'https://quick-on-the-draw-be.herokuapp.com/api/v1/drawings'
-    );
-    const json = await res.json();
-    return json;
-}
+export const getDrawings = async () => {
+  const res = await fetch(
+    `https://quick-on-the-draw-be.herokuapp.com/api/v1/drawings`
+  );
+  const json = await res.json();
+  const mungedData = drawDetailsFromBackend(json);
+
+  return mungedData;
+};
