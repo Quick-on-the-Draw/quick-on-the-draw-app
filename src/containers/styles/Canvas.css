@@ -9,6 +9,12 @@
     items-center;
 }
 
+.main {
+    @apply bg-scroll
+    bg-center
+    bg-cover;
+}
+
 .mainCanvas {
     @apply h-12
     w-12
