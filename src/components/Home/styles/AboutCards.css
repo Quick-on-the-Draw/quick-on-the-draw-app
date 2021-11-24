@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+    @apply flex 
+    flex-row
+    justify-center 
+    items-center
+
+    /* lg: max-w-screen-lg
+    lg: flex-row; */;
+}
+
+.card {
+    @apply flex 
+    flex-col 
+    justify-center 
+    items-center
+    h-72
+    w-72
+    m-4
+    bg-offwhite
+    border-8
+    border-dashed
+    border-orangebrown
+    rounded-xl;
+}
+
+.name {
+    @apply text-redbrown
+    font-bold;
+}
+
+.bioPic {
+    @apply h-12
+    w-12
+    rounded-md;
+}
+
+/* .links {
+    @apply
+} */
