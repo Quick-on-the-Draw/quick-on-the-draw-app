@@ -5,6 +5,7 @@
 .mainSection {
     @apply flex 
     flex-col
-    min-h-screen
-    /* bg-background; */;
+    justify-center 
+    items-center
+    min-h-screen;
 }

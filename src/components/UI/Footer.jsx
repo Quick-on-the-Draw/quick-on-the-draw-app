@@ -4,7 +4,7 @@ import './styles/Footer.css';
 const Footer = () => {
     return (
         <div className='footerBar'>
-            <h2>FOOTER</h2>
+            <h2>Async Studios</h2>
         </div>
     );
 };
