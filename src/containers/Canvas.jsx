@@ -5,6 +5,7 @@ import ColorPalette from '../components/Buttons/ColorPalette';
 import ControlButtons from '../components/Buttons/ControlButtons';
 import Timer from '../components/Timer/Timer';
 import { addDrawing } from '../utils/apiFetch';
+// import { addDrawing } from '../utils/apiFetch';
 import './styles/Canvas.css';
 
 const Canvas = () => {
@@ -45,10 +46,27 @@ const Canvas = () => {
     console.log(dataURL);
   };
 
-  const handleSave = () => {
-    const dataUrl = canvasRef.current.getDataURL();
-    addDrawing(dataUrl);
-    console.log(dataUrl);
+  const handleSave = (e) => {
+    console.log('saved!!!');
+    e.preventDefault();
+    const saveDataString = canvasRef.current.getSaveData();
+    console.log(JSON.parse(saveDataString));
+    // const form = new FormData();
+    // const dataUrl = canvasRef.current.getDataURL();
+    // // console.log(dataUrl);
+    // form.append('url', dataUrl);
+    // form.append('title', 'testing');
+    // form.append('createdDate', '1999-01-09');
+    // form.append('timerSetting', 5);
+    // addDrawing(form);
+    // console.log('the end');
+    addDrawing({
+      title: 'title',
+      createdDate: '1999-01-09',
+      timerSetting: 5,
+      url: saveDataString,
+    });
+    // console.log(dataUrl);
   };
 
   return (
@@ -63,8 +81,12 @@ const Canvas = () => {
           setBrushColor={setBrushColor}
         />
         <BrushSize setBrushSize={setBrushSize} />
-        <ControlButtons handleUndo={handleUndo} handleClear={handleClear} />
-        <button onClick={handleSave}>test</button>
+        <ControlButtons
+          handleUndo={handleUndo}
+          handleClear={handleClear}
+          handleSave={handleSave}
+        />
+
         <a
           className="download-link"
           href="my drawing"
