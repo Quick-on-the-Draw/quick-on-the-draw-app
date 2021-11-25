@@ -2,10 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+.btnDiv {
+  @apply space-x-4;
+}
+
 .brushSizeButtons {
-    @apply rounded-lg 
-    px-4 
-    py-2 
-    bg-green-700 
-    text-green-100;
+  @apply bg-yellow 
+    ring-4
+    ring-redbrown
+    space-x-4;
+}
+
+.btSmall {
+  @apply rounded-full
+     h-6 
+     w-6;
+}
+
+.btMed {
+  @apply rounded-full
+    h-8
+    w-8;
+}
+
+.btLg {
+  @apply rounded-full
+    h-12
+    w-12;
 }

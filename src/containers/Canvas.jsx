@@ -7,6 +7,8 @@ import Timer from '../components/Timer/Timer';
 // import { addDrawing } from '../utils/apiFetch';
 import './styles/Canvas.css';
 import background from '../assets/QuickBackground.png';
+import cactus from '../assets/Cactus.png';
+import title from '../assets/QuickTitle.png';
 
 const Canvas = () => {
   const [brushColor, setBrushColor] = useState('#000000');
@@ -20,8 +22,8 @@ const Canvas = () => {
     brushRadius: brushSize,
     hideInterface: true,
     hideGrid: true,
-    canvasWidth: 700,
-    canvasHeight: 700,
+    canvasWidth: 800,
+    canvasHeight: 500,
   };
 
   const handleColorChange = (color) => {
@@ -74,6 +76,7 @@ const Canvas = () => {
   return (
     <main className="main" style={{ backgroundImage: `url(${background})` }}>
       <div className="container">
+        <img className="title" src={title} alt="QOTD Title" />
         <Timer />
         <ControlButtons
           className="controlButtons"
@@ -82,6 +85,7 @@ const Canvas = () => {
           handleDownload={handleDownload}
           // handleSave={handleSave}
         />
+
         <div className="sideContainer">
           <div className="canvasContainer">
             <CanvasDraw
@@ -91,12 +95,19 @@ const Canvas = () => {
             />
           </div>
           <div className="colorContainer">
-            <BrushSize setBrushSize={setBrushSize} />
-            <ColorPalette
-              className="colorPalette"
-              pickColor={handleColorChange}
-              setBrushColor={setBrushColor}
-            />
+            <div className="brushDiv">
+              <BrushSize setBrushSize={setBrushSize} />
+            </div>
+            <div className="imgDiv">
+              <img className="cactus" src={cactus} alt="cactus logo" />
+            </div>
+            <div className="colorDiv">
+              <ColorPalette
+                className="colorPalette"
+                pickColor={handleColorChange}
+                setBrushColor={setBrushColor}
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -4,12 +4,7 @@
 
 .footerBar {
   @apply flex 
-    justify-between 
-    items-center 
-    h-16 
-    bg-white 
-    text-black
-    relative 
-    shadow-sm 
-    bg-orangebrown;
+  justify-center 
+    items-center
+    bg-darksage;
 }

@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 .navBar {
-    @apply flex 
+  @apply flex 
     justify-between 
     items-center 
-    h-16 
+    h-10
     bg-white 
     text-black
     relative 
     shadow-sm 
-    bg-orangebrown;
+    bg-darksage;
 }
 
 .title {
-    @apply flex 
+  @apply flex 
     justify-center 
     items-center;
 }
 
 .links {
-    @apply flex 
+  @apply flex 
     justify-end 
     space-x-5 
     px-2;
