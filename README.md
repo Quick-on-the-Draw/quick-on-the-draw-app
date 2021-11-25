@@ -1,11 +1,13 @@
-#Quick on the Draw
+# Quick on the Draw
 
 Quick on the Draw is an app to encourage people to take breaks by giving them a fun, timed activity to take their mind off of work.
 
-##Deployed App:
-https://quick-on-the-draw.netlify.app/
+## Deployed App:
 
-##How to use:
+https://quick-on-the-draw.netlify.app/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/27dc9401-3012-43dd-bed7-1a94ff2fa3d6/deploy-status)](https://app.netlify.com/sites/quick-on-the-draw/deploys)
+
+## How to use:
 
 1. Go to deployed site
 2. Navigate to Draw! on the Header
@@ -14,9 +16,9 @@ https://quick-on-the-draw.netlify.app/
 5. Click Undo to remove the last line drawn. Click Clear to remove all lines
 6. When you're finished drawing, click Download to save your drawing to your computer
 
-###Add screenshots
+### Add screenshots
 
-##Technologies used:
+## Technologies used:
 
 -   [React.js](https://reactjs.org/)
 -   [React Canvas Draw](https://github.com/embiem/react-canvas-draw)
@@ -24,11 +26,9 @@ https://quick-on-the-draw.netlify.app/
 -   [CRACO](https://github.com/gsoft-inc/craco)
 -   [Netlify](https://app.netlify.com/)
 
-##Installation
+## Installation
 
 1. Clone the repo
    git clone https://github.com/your_username_/Project-Name.git
 2. Install NPM packages
    npm i
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/27dc9401-3012-43dd-bed7-1a94ff2fa3d6/deploy-status)](https://app.netlify.com/sites/quick-on-the-draw/deploys)
