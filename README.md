@@ -4,7 +4,7 @@ Quick on the Draw is an app to encourage people to take breaks by giving them a 
 
 ## Deployed App:
 
-https://quick-on-the-draw.netlify.app/
+[Quick on the Draw!](https://quick-on-the-draw.netlify.app/) <br><br>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/27dc9401-3012-43dd-bed7-1a94ff2fa3d6/deploy-status)](https://app.netlify.com/sites/quick-on-the-draw/deploys)
 
 ## How to use:
@@ -29,6 +29,6 @@ https://quick-on-the-draw.netlify.app/
 ## Installation
 
 1. Clone the repo
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/Quick-on-the-Draw/quick-on-the-draw-app.git
 2. Install NPM packages
    npm i
