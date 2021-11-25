@@ -2,44 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+.main {
+    @apply bg-scroll
+    bg-center
+    bg-cover
+    h-screen;
+}
+
 .container {
-  @apply flex 
+    @apply flex 
     flex-col 
     justify-center 
     items-center;
 }
 
-.main {
-  @apply bg-scroll
-    bg-center
-    bg-cover;
-}
 .colorContainer {
-  @apply grid grid-cols-3 gap-2;
+    @apply grid grid-cols-3 gap-2;
 }
 .brushDiv {
-  @apply col-start-3;
+    @apply col-start-3;
 }
 .imgDiv {
-  @apply col-span-2;
+    @apply col-span-2;
 }
 
 .colorDiv {
-  @apply col-start-3;
+    @apply col-start-3;
 }
 
 .sideContainer {
-  @apply flex
+    @apply flex
     flex-row-reverse;
 }
 
 .colorPalette {
-  @apply flex
+    @apply flex
     flex-col;
 }
 
 .mainCanvas {
-  @apply h-12
+    @apply h-12
     w-12
     border-8
     border-yellow
@@ -56,11 +58,11 @@
 }
 
 .cactus {
-  @apply h-full
+    @apply h-full
   w-full;
 }
 
 .title {
-  @apply h-60
+    @apply h-60
   w-64;
 }

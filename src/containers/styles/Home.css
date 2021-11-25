@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 .mainSection {
-    @apply flex 
+    @apply bg-scroll
+    flex 
     flex-col
     justify-center
     items-center

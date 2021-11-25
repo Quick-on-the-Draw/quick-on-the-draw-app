@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 .footerBar {
-  @apply flex 
+    @apply flex 
   justify-center 
-    items-center
-    bg-darksage;
+  items-center
+  bg-darksage
+  text-offwhite;
 }
