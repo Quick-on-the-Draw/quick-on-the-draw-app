@@ -5,7 +5,24 @@
 .mainSection {
     @apply flex 
     flex-col
-    justify-center 
+    justify-center
     items-center
     min-h-screen;
+}
+
+.titleImage {
+    @apply h-60
+    w-auto
+    m-6;
+}
+
+.innerContainer {
+    @apply m-6 
+    p-6;
+}
+
+.header {
+    @apply text-redbrown
+    font-bold
+    m-6;
 }
