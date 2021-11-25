@@ -3,6 +3,11 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
+            fontFamily: {
+                damion: ['damion', 'sans-serif'],
+                playfair: ['playfair', 'serif'],
+                twoPeaks: ['twoPeaks', 'serif'],
+            },
             colors: {
                 redbrown: {
                     DEFAULT: '#892301',
