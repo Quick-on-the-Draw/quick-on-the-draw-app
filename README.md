@@ -27,6 +27,12 @@ Quick on the Draw is an app to encourage people to take breaks by giving them a 
 -   [CRACO](https://github.com/gsoft-inc/craco)
 -   [Netlify](https://app.netlify.com/)
 
+## Design Technologies used:
+- Illustrator
+- Procreate
+- [Figma](https://www.figma.com/file/uQzFDa7ICpZpYaP0kcn0ZF/Quick-on-the-Draw?node-id=0%3A1)
+- [Miro](https://www.miro.com/app
+
 ## Installation
 
 1. Clone the repo
