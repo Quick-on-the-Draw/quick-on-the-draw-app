@@ -3,26 +3,64 @@
 @tailwind utilities;
 
 .container {
-    @apply flex 
+  @apply flex 
     flex-col 
     justify-center 
     items-center;
 }
 
 .main {
-    @apply bg-scroll
+  @apply bg-scroll
     bg-center
     bg-cover;
 }
+.colorContainer {
+  @apply grid grid-cols-3 gap-2;
+}
+.brushDiv {
+  @apply col-start-3;
+}
+.imgDiv {
+  @apply col-span-2;
+}
+
+.colorDiv {
+  @apply col-start-3;
+}
+
+.sideContainer {
+  @apply flex
+    flex-row-reverse;
+}
+
+.colorPalette {
+  @apply flex
+    flex-col;
+}
 
 .mainCanvas {
-    @apply h-12
+  @apply h-12
     w-12
     border-8
-    border-black
-    border-double
+    border-yellow
+    border-dashed
+    rounded-lg
+    shadow-2xl
     flex
     content-center
     justify-center
     m-2;
+}
+
+.canvasContainer {
+}
+
+.cactus {
+  @apply h-full
+  w-full;
+}
+
+.title {
+  @apply h-60
+  w-64;
 }

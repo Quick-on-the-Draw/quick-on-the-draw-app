@@ -4,12 +4,15 @@
 
 .container {
   @apply flex
-    flex-row;
+    flex-col
+    items-end
+    pt-10
+    w-2;
 }
 
 .colorButton {
-  @apply w-6
-    h-4
+  @apply w-10
+    h-8
     m-2;
 }
 
@@ -29,7 +32,7 @@ input[type='color'] {
   );
 
   display: block;
-  width: 40px;
-  height: 30px;
+  width: 42px;
+  height: 32px;
   border: none;
 }

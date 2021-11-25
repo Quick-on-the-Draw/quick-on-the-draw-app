@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.buttonBox {
+  @apply flex
+    flex-row
+    justify-items-end
+    items-end
+    w-auto;
+}
 .canvasBtn {
-    @apply rounded-lg 
-    px-4 
-    py-2 
-    bg-green-700 
-    text-green-100;
+  @apply p-4;
 }
