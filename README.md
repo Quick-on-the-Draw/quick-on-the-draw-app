@@ -33,3 +33,5 @@ Quick on the Draw is an app to encourage people to take breaks by giving them a 
    git clone https://github.com/Quick-on-the-Draw/quick-on-the-draw-app.git
 2. Install NPM packages
    npm i
+
+![Cactus logo v3](https://user-images.githubusercontent.com/71411431/143373469-d1495549-0991-4852-b3d9-fd554b7b4ef8.png)
