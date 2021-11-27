@@ -1,6 +1,5 @@
 ![banner](https://user-images.githubusercontent.com/71411431/143373281-bc31a613-5c01-49ca-aab2-805793f3862c.png)
 
-
 Quick on the Draw is an app to encourage people to take breaks by giving them a fun, timed activity to take their mind off of work.
 
 ## Deployed App:
@@ -18,6 +17,12 @@ Quick on the Draw is an app to encourage people to take breaks by giving them a 
 6. When you're finished drawing, click Download to save your drawing to your computer
 
 ### Add screenshots
+
+## Team
+
+-   Kat Sauma - UX/Design
+-   Nicole Martin
+-   KB Boyles
 
 ## Technologies used:
 
