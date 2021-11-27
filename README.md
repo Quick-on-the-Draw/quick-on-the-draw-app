@@ -1,4 +1,5 @@
 ![banner](https://user-images.githubusercontent.com/71411431/143373281-bc31a613-5c01-49ca-aab2-805793f3862c.png)
+All design images and styles by: [Kat Sauma](https://www.linkedin.com/in/kat-sauma/)
 
 Quick on the Draw is an app to encourage people to take breaks by giving them a fun, timed activity to take their mind off of work.
 
@@ -31,6 +32,12 @@ Quick on the Draw is an app to encourage people to take breaks by giving them a 
 -   [Tailwind css](https://tailwindcss.com/)
 -   [CRACO](https://github.com/gsoft-inc/craco)
 -   [Netlify](https://app.netlify.com/)
+
+## Design Technologies used:
+- Adobe Illustrator
+- Procreate
+- [Figma](https://www.figma.com/file/uQzFDa7ICpZpYaP0kcn0ZF/Quick-on-the-Draw?node-id=0%3A1)
+- [Miro](https://www.miro.com/app)
 
 ## Installation
 
