@@ -22,17 +22,20 @@
     flex-col
     justify-center
     items-center
-    m-6
-    /* lg: max-w-screen-lg
-    lg: flex-row; */;
+    mx-4
+    
+    /* lg:max-w-screen-lg */
+    /* lg:flex-row; */;
 }
 
 .aboutSection {
     @apply flex 
-    flex-row
+    flex-col
     justify-center
     items-center
-    m-6;
+    m-6
+
+    lg:flex-row;
 }
 
 .header {

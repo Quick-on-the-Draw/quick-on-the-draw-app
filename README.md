@@ -19,6 +19,12 @@ Quick on the Draw is an app to encourage people to take breaks by giving them a 
 
 ### Add screenshots
 
+## Team
+
+-   Kat Sauma - UX/Design
+-   Nicole Martin
+-   KB Boyles
+
 ## Technologies used:
 
 -   [React.js](https://reactjs.org/)

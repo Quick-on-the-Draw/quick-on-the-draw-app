@@ -3,26 +3,31 @@
 @tailwind utilities;
 
 .mainSection {
-    @apply flex 
+    @apply bg-scroll
+    flex 
     flex-col
     justify-center
     items-center
-    min-h-screen;
+    min-h-full;
 }
 
 .titleImage {
     @apply h-60
     w-auto
-    m-6;
+    
+    lg:h-80;
 }
 
 .innerContainer {
-    @apply m-6 
-    p-6;
+    @apply flex 
+    flex-col
+    justify-center
+    items-center
+    m-2;
 }
 
-.header {
+.headerHome {
     @apply text-redbrown
     font-bold
-    m-6;
+    m-2;
 }
