@@ -3,11 +3,6 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
-            fontFamily: {
-                damion: ['damion', 'sans-serif'],
-                playfair: ['playfair', 'serif'],
-                twoPeaks: ['twoPeaks', 'serif'],
-            },
             colors: {
                 redbrown: {
                     DEFAULT: '#892301',
@@ -31,6 +26,13 @@ module.exports = {
                     DEFAULT: '111615',
                 },
             },
+            backgroundImage: {
+                background: 'url("/src/assets/QuickBackground.png")',
+            },
+        },
+        fontFamily: {
+            sans: ['Lora', 'serif'],
+            heading: ['Staatliches', 'cursive'],
         },
     },
     variants: {

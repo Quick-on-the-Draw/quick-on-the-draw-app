@@ -1,9 +1,13 @@
+/* Title text */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Staatliches&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .mainSection {
-    @apply bg-scroll
+    @apply bg-background
+    bg-fixed
     flex 
     flex-col
     justify-center
@@ -27,7 +31,8 @@
 }
 
 .headerHome {
-    @apply text-redbrown
-    font-bold
+    @apply font-heading
+    text-redbrown
+    /* font-bold */
     m-2;
 }

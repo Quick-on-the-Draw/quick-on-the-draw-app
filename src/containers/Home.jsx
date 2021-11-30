@@ -1,15 +1,11 @@
 import './styles/Home.css';
 import React from 'react';
-import background from '../assets/QuickBackground.png';
 import AboutCards from '../components/Home/AboutCards';
 import title from '../assets/QuickTitle.png';
 
 const Home = () => {
     return (
-        <main
-            className='mainSection'
-            style={{ backgroundImage: `url(${background})` }}
-        >
+        <main className='mainSection'>
             <img src={title} alt='Quick on the Draw' className='titleImage' />
             <div className='innerContainer'>
                 <p>
