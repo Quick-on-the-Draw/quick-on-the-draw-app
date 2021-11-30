@@ -1,26 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Staatliches&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face {
-    font-family: damion;
-    font-weight: 400;
-    src: url(../../../fonts/Damion-Regular.ttf) format('tff');
-}
-@font-face {
-    font-family: playfair;
-    font-weight: 500;
-    src: url(../../../fonts/PlayfairDisplay-VariableFont_wght.ttf) format('tff');
-}
-@font-face {
-    font-family: twoPeaksCurly;
-    font-weight: 500;
-    src: url(../../../fonts/TwoPeaksCurly.ttf) format('tff');
-}
 
 .main {
     @apply flex 
     flex-col
-    justify-center
     items-center
     mx-4
     
@@ -41,7 +27,7 @@
 .header {
     @apply text-darksage
     font-bold
-    font-damion;
+    font-heading;
 }
 
 .card {
@@ -63,7 +49,7 @@
 .name {
     @apply text-darksage
     font-bold
-    font-damion;
+    font-heading;
 }
 
 .bioPic {
@@ -74,10 +60,14 @@
 }
 
 .bio {
-    @apply text-sm
-    font-playfair;
+    @apply text-sm;
 }
 
 .links {
     @apply m-2;
+}
+
+.socialIcons {
+    @apply h-6
+    w-auto;
 }

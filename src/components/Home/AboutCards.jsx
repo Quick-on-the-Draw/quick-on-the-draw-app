@@ -1,8 +1,13 @@
 import React from 'react';
+import './styles/AboutCards.css';
 import kb from '../../assets/KB.jpg';
 import nicole from '../../assets/Nicole.jpg';
 import kat from '../../assets/Kat.jpg';
-import './styles/AboutCards.css';
+import twitter from '../../assets/icons/social/twitter.png';
+import github from '../../assets/icons/social/github.png';
+import linkedIn from '../../assets/icons/social/linkedIn.png';
+import nicoleSite from '../../assets/icons/social/nicole-portfolio.png';
+import katSite from '../../assets/icons/social/kat-proj-site.png';
 
 const AboutCards = () => {
     return (
@@ -25,14 +30,22 @@ const AboutCards = () => {
                             target='_blank'
                             rel='noreferrer'
                         >
-                            <i className='fab fa-twitter'></i>
+                            <img
+                                src={twitter}
+                                alt='Twitter'
+                                className='socialIcons'
+                            />
                         </a>
                         <a
                             href='https://github.com/katrinkajb'
                             target='_blank'
                             rel='noreferrer'
                         >
-                            <i class='fab fa-github'></i>
+                            <img
+                                src={github}
+                                alt='Github'
+                                className='socialIcons'
+                            />
                         </a>
                         <a
                             href='https://www.linkedin.com/in/katy-boyles/'
@@ -40,8 +53,11 @@ const AboutCards = () => {
                             rel='noreferrer'
                             className='linkedIn'
                         >
-                            {/* <img src={kb} alt='LinkedIn' /> */}
-                            <i class='fab fa-linkedin-in'></i>
+                            <img
+                                src={linkedIn}
+                                alt='LinkedIn'
+                                className='socialIcons'
+                            />
                         </a>
                     </div>
                 </div>
@@ -63,24 +79,40 @@ const AboutCards = () => {
                             target='_blank'
                             rel='noreferrer'
                         >
-                            <i className='fab fa-twitter'></i>
+                            <img
+                                src={twitter}
+                                alt='Twitter'
+                                className='socialIcons'
+                            />
                         </a>
                         <a
                             href='https://github.com/nicole-m-martin'
                             target='_blank'
                             rel='noreferrer'
                         >
-                            <i class='fab fa-github'></i>
+                            <img
+                                src={github}
+                                alt='Github'
+                                className='socialIcons'
+                            />
                         </a>
                         <a
                             href='https://www.linkedin.com/in/nicolemartinpdx/'
                             target='_blank'
                             rel='noreferrer'
                         >
-                            <i class='fab fa-linkedin-in'></i>
+                            <img
+                                src={linkedIn}
+                                alt='LinkedIn'
+                                className='socialIcons'
+                            />
                         </a>
                         <a href='https://www.nicolemartin.dev/'>
-                            <i class='fas fa-grin-alt'></i>
+                            <img
+                                src={nicoleSite}
+                                alt='Nicole Martin portfolio site'
+                                className='socialIcons'
+                            />
                         </a>
                     </div>
                 </div>
@@ -103,28 +135,44 @@ const AboutCards = () => {
                             target='_blank'
                             rel='noreferrer'
                         >
-                            <i className='fab fa-twitter'></i>
+                            <img
+                                src={twitter}
+                                alt='Twitter'
+                                className='socialIcons'
+                            />
                         </a>
                         <a
                             href='https://github.com/kat-sauma'
                             target='_blank'
                             rel='noreferrer'
                         >
-                            <i class='fab fa-github'></i>
+                            <img
+                                src={github}
+                                alt='Github'
+                                className='socialIcons'
+                            />
                         </a>
                         <a
                             href='https://www.linkedin.com/in/kat-sauma/'
                             target='_blank'
                             rel='noreferrer'
                         >
-                            <i class='fab fa-linkedin-in'></i>
+                            <img
+                                src={linkedIn}
+                                alt='LinkedIn'
+                                className='socialIcons'
+                            />
                         </a>
                         <a
                             href='https://socketjockey.netlify.app/'
                             target='_blank'
                             rel='noreferrer'
                         >
-                            <i class='fas fa-music'></i>
+                            <img
+                                src={katSite}
+                                alt='Socket Jockey'
+                                className='socialIcons'
+                            />
                         </a>
                     </div>
                 </div>
