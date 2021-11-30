@@ -5,17 +5,16 @@
 @tailwind utilities;
 
 .main {
-    @apply flex 
+  @apply flex 
     flex-col
     items-center
-    mx-4
     
     /* lg:max-w-screen-lg */
     /* lg:flex-row; */;
 }
 
 .aboutSection {
-    @apply flex 
+  @apply flex 
     flex-col
     justify-center
     items-center
@@ -25,13 +24,13 @@
 }
 
 .header {
-    @apply text-darksage
+  @apply text-darksage
     font-bold
     font-heading;
 }
 
 .card {
-    @apply flex 
+  @apply flex 
     flex-col 
     justify-center 
     items-center
@@ -47,27 +46,27 @@
 }
 
 .name {
-    @apply text-darksage
+  @apply text-darksage
     font-bold
     font-heading;
 }
 
 .bioPic {
-    @apply h-24
+  @apply h-24
     w-24
     rounded-md
     m-2;
 }
 
 .bio {
-    @apply text-sm;
+  @apply text-sm;
 }
 
 .links {
-    @apply m-2;
+  @apply m-2;
 }
 
 .socialIcons {
-    @apply h-6
+  @apply h-6
     w-auto;
 }

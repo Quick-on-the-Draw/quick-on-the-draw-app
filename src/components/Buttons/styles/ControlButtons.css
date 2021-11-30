@@ -12,3 +12,7 @@
 .canvasBtn {
   @apply p-4;
 }
+
+.save {
+  @apply transform rotate-180;
+}

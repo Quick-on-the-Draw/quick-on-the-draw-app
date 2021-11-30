@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
+/* .container {
   @apply flex
     flex-col
     items-end
@@ -14,7 +14,7 @@
   @apply w-10
     h-8
     m-2;
-}
+} */
 
 .colorButton:focus {
   border-bottom: 3px solid red;

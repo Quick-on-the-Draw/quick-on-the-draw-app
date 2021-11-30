@@ -5,7 +5,6 @@ import './styles/Nav.css';
 const Nav = () => {
   return (
     <div className="navBar">
-      <div className="title"></div>
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/draw">Draw!</Link>

@@ -5,8 +5,8 @@ import ColorPalette from '../components/Buttons/ColorPalette';
 import ControlButtons from '../components/Buttons/ControlButtons';
 import Timer from '../components/Timer/Timer';
 // import { addDrawing } from '../utils/apiFetch';
-import './styles/Canvas.css';
-import background from '../assets/QuickBackground.png';
+import './styles/Canvas.module.css';
+// import background from '../assets/QuickBackground.png';
 import cactus from '../assets/Cactus.png';
 import title from '../assets/QuickTitle.png';
 
@@ -22,8 +22,8 @@ const Canvas = () => {
     brushRadius: brushSize,
     hideInterface: true,
     hideGrid: true,
-    canvasWidth: 800,
-    canvasHeight: 500,
+    canvasWidth: 900,
+    canvasHeight: 600,
   };
 
   const handleColorChange = (color) => {
@@ -74,36 +74,45 @@ const Canvas = () => {
   // if (loading) return 'LOADING';
 
   return (
-    <main className="main" style={{ backgroundImage: `url(${background})` }}>
-      <div className="container">
-        <img className="title" src={title} alt="QOTD Title" />
-        <Timer />
-        <ControlButtons
-          className="controlButtons"
-          handleUndo={handleUndo}
-          handleClear={handleClear}
-          handleDownload={handleDownload}
-          // handleSave={handleSave}
-        />
+    <main
+      className="
+      h-screen bg-red
+      bg-background bg-center
+      bg-no-repeat bg-cover
+      bg-fixed"
+      // style={{ backgroundImage: `url(${background})` }}
+    >
+      <div className="min-h-screen flex items-center justify-center">
+        <div class="grid grid-cols-3 grid-rows-5 gap-2">
+          <img className="h-72 w-80  col-span-1" src={title} alt="QOTD Title" />
 
-        <div className="sideContainer">
-          <div className="canvasContainer">
-            <CanvasDraw
-              {...canvasProps}
-              className="mainCanvas"
-              ref={canvasRef}
-            />
-          </div>
-          <div className="colorContainer">
-            <div className="brushDiv">
-              <BrushSize setBrushSize={setBrushSize} />
-            </div>
-            <div className="imgDiv">
-              <img className="cactus" src={cactus} alt="cactus logo" />
-            </div>
-            <div className="colorDiv">
+          <Timer className="col-start-2" />
+
+          <ControlButtons
+            className="col-start-2 col-span-2 row-span-5"
+            handleUndo={handleUndo}
+            handleClear={handleClear}
+            handleDownload={handleDownload}
+            // handleSave={handleSave}
+          />
+
+          <CanvasDraw
+            {...canvasProps}
+            className="bg-offwhite border-8 border-yellow border-dashed rounded-xl shadow col-start-2 col-span-2 row-span-5"
+            ref={canvasRef}
+          />
+          <div className="row-start-2 row-span-4">
+            <div className="grid grid-rows-3 grid-cols-3 gap-2">
+              <BrushSize className="row-span-1" setBrushSize={setBrushSize} />
+
+              <img
+                className="row-start-2 row-span-2"
+                src={cactus}
+                alt="cactus logo"
+              />
+
               <ColorPalette
-                className="colorPalette"
+                className="row-span-3"
                 pickColor={handleColorChange}
                 setBrushColor={setBrushColor}
               />
