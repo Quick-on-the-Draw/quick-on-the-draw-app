@@ -4,26 +4,42 @@ module.exports = {
     theme: {
         extend: {
             colors: {
+                // kobe
                 redbrown: {
-                    DEFAULT: '#892301',
+                    DEFAULT: '#892301FF',
                 },
+                cedar: {
+                    DEFAULT: '#C85C41FF',
+                },
+                salmon: {
+                    DEFAULT: '#EA9473FF',
+                },
+                apricot: {
+                    DEFAULT: '#FFC2A8FF',
+                },
+                // ochre
                 orangebrown: {
-                    DEFAULT: '#C8752D',
+                    DEFAULT: '#C8752DFF',
                 },
+                // jasmine
                 yellow: {
-                    DEFAULT: '#FEDA86',
+                    DEFAULT: '#FEDA86FF',
                 },
+                // isabelline
                 offwhite: {
-                    DEFAULT: '#EFEDE7',
+                    DEFAULT: '#EFEDE7FF',
                 },
+                // morning blue
                 lightsage: {
-                    DEFAULT: '#86AC9B',
+                    DEFAULT: '#86AC9BFF',
                 },
+                // brunswich green
                 darksage: {
-                    DEFAULT: '#26543F',
+                    DEFAULT: '#26543FFF',
                 },
+                // eerie black
                 darkblack: {
-                    DEFAULT: '111615',
+                    DEFAULT: '111615FF',
                 },
             },
             backgroundImage: {
