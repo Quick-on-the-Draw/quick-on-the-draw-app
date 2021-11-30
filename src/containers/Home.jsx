@@ -17,8 +17,10 @@ const Home = () => {
                 <p>
                     Click Draw to go to the Draw page. Choose your timer
                     setting, then choose your colors and brush size at the
-                    bottom of the screen. Undo or Clear when you need and
-                    Download your image when you're finished!
+                    bottom of the screen.
+                    <br />
+                    Undo or Clear when you need and Download your image when
+                    you're finished!
                 </p>
                 <h3 className='headerHome'>Technologies:</h3>
                 <p>

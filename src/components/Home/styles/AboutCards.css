@@ -66,3 +66,8 @@
 .links {
     @apply m-2;
 }
+
+.socialIcons {
+    @apply h-6
+    w-auto;
+}
