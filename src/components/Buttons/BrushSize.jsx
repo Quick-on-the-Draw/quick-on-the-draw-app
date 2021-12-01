@@ -21,7 +21,7 @@ const BrushSize = ({ setBrushSize }) => {
         />
       </button>
       <button
-        className="brushSizeButtons btMed focus:ring-2 focus: ring-inset focus:ring-purple"
+        className="brushSizeButtons rounded-lg focus:ring-2 focus: ring-inset focus:ring-purple"
         onClick={() => {
           setBrushSize(10);
         }}
@@ -37,7 +37,7 @@ const BrushSize = ({ setBrushSize }) => {
         />
       </button>
       <button
-        className="brushSizeButtons btLg focus:ring-2 focus: ring-inset focus:ring-purple"
+        className="brushSizeButtons rounded-lg focus:ring-2 focus: ring-inset focus:ring-purple"
         onClick={() => {
           setBrushSize(15);
         }}
