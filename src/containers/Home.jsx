@@ -31,7 +31,9 @@ const Home = () => {
                         styling. It is deployed on Netlify.
                     </p>
                 </div>
-                <img src={cactus} alt='Cactus logo' className='cactus' />
+                <div className='cactusContainer'>
+                    <img src={cactus} alt='Cactus logo' className='cactus' />
+                </div>
             </section>
             <AboutCards />
         </main>

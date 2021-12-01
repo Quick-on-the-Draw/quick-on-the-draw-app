@@ -17,7 +17,7 @@ Quick on the Draw is an app to encourage people to take breaks by giving them a 
 5. Click Undo to remove the last line drawn. Click Clear to remove all lines
 6. When you're finished drawing, click Download to save your drawing to your computer
 
-### Add screenshots
+![Capture](https://user-images.githubusercontent.com/74560886/144158546-497b2eda-f8f9-4c7c-9cf0-6fd1eddee583.PNG)
 
 ## Team
 
@@ -34,10 +34,11 @@ Quick on the Draw is an app to encourage people to take breaks by giving them a 
 -   [Netlify](https://app.netlify.com/)
 
 ## Design Technologies used:
-- Adobe Illustrator
-- Procreate
-- [Figma](https://www.figma.com/file/uQzFDa7ICpZpYaP0kcn0ZF/Quick-on-the-Draw?node-id=0%3A1)
-- [Miro](https://www.miro.com/app)
+
+-   Adobe Illustrator
+-   Procreate
+-   [Figma](https://www.figma.com/file/uQzFDa7ICpZpYaP0kcn0ZF/Quick-on-the-Draw?node-id=0%3A1)
+-   [Miro](https://www.miro.com/app)
 
 ## Installation
 
