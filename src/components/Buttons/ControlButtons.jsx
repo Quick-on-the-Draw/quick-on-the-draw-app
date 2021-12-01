@@ -1,15 +1,18 @@
 import React from 'react';
 import './styles/ControlButtons.css';
+import save from '../../assets/icons/buttons/save.png';
+import undo from '../../assets/icons/buttons/undo.png';
+import trash from '../../assets/icons/buttons/trash.png';
 
 const ControlButtons = ({ handleUndo, handleClear, handleDownload }) => {
   return (
     <>
       <div className="buttonBox">
         <button className="canvasBtn" onClick={handleUndo}>
-          <i className="fas fa-undo-alt fa-2x"></i>
+          <img src={undo} alt="Undo Button" />
         </button>
         <button className="canvasBtn" onClick={handleClear}>
-          <i className="far fa-trash-alt fa-2x"></i>
+          <img src={trash} alt="Delete Button" />
         </button>
         <a
           className="canvasBtn"
@@ -17,7 +20,7 @@ const ControlButtons = ({ handleUndo, handleClear, handleDownload }) => {
           download="drawing.png"
           onClick={handleDownload}
         >
-          <i className="fas fa-download fa-2x"></i>
+          <img className="save" src={save} alt="Save Button" />
         </a>
       </div>
     </>

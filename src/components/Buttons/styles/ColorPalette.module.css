@@ -2,25 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
+/* .container {
   @apply flex
     flex-col
     items-end
     pt-10
     w-2;
+} */
+
+.color-btn {
+  @apply w-14
+  h-12
+  mt-8;
 }
 
-.colorButton {
-  @apply w-10
-    h-8
-    m-2;
-}
-
-.colorButton:focus {
+.color-btn:focus {
   border-bottom: 3px solid red;
 }
 
 input[type='color'] {
+  @apply w-14
+  h-12
+  m-4;
+
   background: linear-gradient(
     to bottom right,
     red,
@@ -30,9 +34,4 @@ input[type='color'] {
     blue,
     violet
   );
-
-  display: block;
-  width: 42px;
-  height: 32px;
-  border: none;
 }

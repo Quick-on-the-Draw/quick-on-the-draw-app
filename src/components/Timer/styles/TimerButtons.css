@@ -3,24 +3,31 @@
 @tailwind utilities;
 
 input[type='radio']:checked + label {
-    background-color: #26543f;
-    color: #efede7;
+  background-color: #26543f;
+  color: #efede7;
 }
 
 .timeBtn {
-    @apply rounded-lg 
+  @apply rounded-lg 
     px-4 
-    py-2 
-    bg-green-700 
-    text-green-100;
+    py-2
+    
+    transition 
+    duration-500 
+    ease-in-out 
+    text-yellow
+    bg-redbrown 
+    hover:bg-yellow 
+    hover:text-redbrown
+    transform hover:-translate-y-1 hover:scale-110;
 }
 
 .radio {
-    @apply hidden;
+  @apply hidden;
 }
 
 .formBtn {
-    @apply flex
+  @apply flex
     items-center
     justify-center
     space-x-4
@@ -28,12 +35,12 @@ input[type='radio']:checked + label {
 }
 
 .labels {
-    @apply hover:bg-lightsage
+  @apply hover:bg-lightsage
     border-2
     border-darksage
     rounded-full
-    h-6 
-    w-6
+    h-8 
+    w-8
     flex
     space-x-4
     items-center

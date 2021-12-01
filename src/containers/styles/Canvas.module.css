@@ -1,15 +1,15 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.main {
-    @apply bg-scroll
+.draw-main {
+  @apply bg-scroll
     bg-center
     bg-cover
     h-screen;
-}
+} */
 
-.container {
+/* .container {
     @apply flex 
     flex-col 
     justify-center 
@@ -52,17 +52,17 @@
     content-center
     justify-center
     m-2;
-}
+} */
 
-.canvasContainer {
+/* .canvasContainer {
 }
 
 .cactus {
     @apply h-full
   w-full;
-}
+}*/
 
-.title {
-    @apply h-60
+/* .title {
+  @apply h-60
   w-64;
-}
+} */
