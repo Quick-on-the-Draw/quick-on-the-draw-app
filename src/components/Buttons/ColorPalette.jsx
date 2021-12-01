@@ -1,9 +1,10 @@
 import React from 'react';
-// import style from './styles/ColorPalette.module.css';
+import './styles/ColorPalette.module.css';
 
 const ColorPalette = ({ pickColor, brushColor, setBrushColor }) => {
   const colors = [
     '#892301',
+    '#ea9473ff',
     '#C8752D',
     '#FEDA86',
     '#86AC9B',
@@ -18,25 +19,32 @@ const ColorPalette = ({ pickColor, brushColor, setBrushColor }) => {
   return (
     <>
       <div
-        className="flex
+        className="
+        flex
     flex-col
-    pt-10
-    w-2"
+    w-2  
+   col-start-3 row-start-1 row-span-3 w-24 bg-gray-100 bg-opacity-25"
       >
         {colors.map((color) => {
           let thisColor = { background: color };
 
           return (
-            <button
-              key={color}
-              className="w-10
-                            h-8
-                            m-2"
-              style={thisColor}
-              onClick={() => {
-                handleColorPick(color);
-              }}
-            ></button>
+            <div>
+              <button
+                key={color}
+                className=" flex justify-items-end w-14
+              h-10
+              m-4 transition 
+              duration-150 
+              ease-in-out 
+              transform hover:-translate-y-1 hover:scale-120
+              focus:ring-4 focus:ring-purple"
+                style={thisColor}
+                onClick={() => {
+                  handleColorPick(color);
+                }}
+              ></button>
+            </div>
           );
         })}
 

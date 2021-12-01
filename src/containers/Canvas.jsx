@@ -79,12 +79,17 @@ const Canvas = () => {
       h-screen bg-red
       bg-background bg-center
       bg-no-repeat bg-cover
-      bg-fixed"
+      bg-fixed
+      overflow-hidden"
       // style={{ backgroundImage: `url(${background})` }}
     >
       <div className="min-h-screen flex items-center justify-center">
-        <div class="grid grid-cols-3 grid-rows-5 gap-2">
-          <img className="h-72 w-80  col-span-1" src={title} alt="QOTD Title" />
+        <div class="grid grid-cols-3 grid-rows-5 mb-20">
+          <img
+            className="h-9/12 w-9/12 col-span-1"
+            src={title}
+            alt="QOTD Title"
+          />
 
           <Timer className="col-start-2" />
 
@@ -102,11 +107,11 @@ const Canvas = () => {
             ref={canvasRef}
           />
           <div className="row-start-2 row-span-4">
-            <div className="grid grid-rows-3 grid-cols-3 gap-2">
-              <BrushSize className="row-span-1" setBrushSize={setBrushSize} />
+            <div className="grid grid-cols-3 rows-3">
+              <BrushSize setBrushSize={setBrushSize} />
 
               <img
-                className="row-start-2 row-span-2"
+                className="col-start-1 col-span-2 row-span-4 h-auto"
                 src={cactus}
                 alt="cactus logo"
               />

@@ -44,6 +44,10 @@ module.exports = {
         darkblack: {
           DEFAULT: '111615FF',
         },
+        // purple-mountain-majesty
+        purple: {
+          DEFAULT: '#A276C4ff',
+        },
       },
       backgroundImage: {
         background: 'url("/src/assets/QuickBackground.png")',
