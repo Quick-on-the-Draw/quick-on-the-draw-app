@@ -23,7 +23,8 @@
 input[type='color'] {
   @apply w-14
   h-12
-  m-4;
+  m-4
+  rounded-lg;
 
   background: linear-gradient(
     to bottom right,

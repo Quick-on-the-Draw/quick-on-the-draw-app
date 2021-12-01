@@ -5,17 +5,17 @@ const BrushSize = ({ setBrushSize }) => {
   return (
     <div className="flex justify-center col-span-2  m-2">
       <button
-        className="brushSizeButtons  focus:ring-2 focus: ring-inset focus:ring-purple "
+        className="brushSizeButtons rounded-lg focus:ring-2 focus: ring-inset focus:ring-purple "
         onClick={() => {
           setBrushSize(1);
         }}
       >
         <img
-          className="h-12 w-12 m-4  transition 
+          className="h-12 w-12 m-4 transition 
     duration-300 
     ease-in-out
     
-    transform hover:-translate-y-1 hover:scale-120;"
+    transform hover:-translate-y-1 hover:scale-110;"
           src={brush}
           alt=" Small Brush Button"
         />
@@ -31,7 +31,7 @@ const BrushSize = ({ setBrushSize }) => {
           className="h-16 w-16 m-4 h-12 w-12 m-4  transition 
           duration-300 
           ease-in-out 
-          transform hover:-translate-y-1 hover:scale-120   "
+          transform hover:-translate-y-1 hover:scale-110   "
           src={brush}
           alt=" Med Brush Button"
         />
