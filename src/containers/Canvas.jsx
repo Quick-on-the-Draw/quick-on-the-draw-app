@@ -84,7 +84,7 @@ const Canvas = () => {
       // style={{ backgroundImage: `url(${background})` }}
     >
       <div className="min-h-screen flex items-center justify-center">
-        <div class="grid grid-cols-3 grid-rows-5 mb-20">
+        <div class="grid grid-cols-3 grid-rows-5 mb-20 ">
           <img
             className="h-9/12 w-9/12 col-span-1"
             src={title}
@@ -111,7 +111,7 @@ const Canvas = () => {
               <BrushSize setBrushSize={setBrushSize} />
 
               <img
-                className="col-start-1 col-span-2 row-span-4 h-auto"
+                className="col-start-1 col-span-2 row-span-4 h-auto flex  "
                 src={cactus}
                 alt="cactus logo"
               />
