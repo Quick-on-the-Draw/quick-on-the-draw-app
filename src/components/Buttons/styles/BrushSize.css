@@ -1,27 +1,21 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .btnDiv {
-  @apply flex 
-  justify-center 
-  col-span-2  
-  m-2;
+  @apply flex justify-center col-span-2 m-2;
 }
 
 .brushSizeButtons {
-  @apply rounded-lg 
-  focus:ring-2 
-  focus:ring-inset
-  focus:ring-purple;
+  @apply rounded-lg focus:ring-2 focus:ring-inset focus:ring-purple;
 }
 
 .btImage {
   @apply transition 
-    duration-300 
-    ease-in-out
-    transform 
-    hover:-translate-y-1 
+  duration-300 
+  ease-in-out
+  transform 
+  hover:-translate-y-1 
   hover:scale-110;
 }
 
@@ -35,4 +29,4 @@
 
 .btLg {
   @apply h-20 w-20 m-4;
-} */
+}
