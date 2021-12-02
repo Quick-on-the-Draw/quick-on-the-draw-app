@@ -1,7 +1,11 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .finalCountdown {
-    @apply text-4xl;
-} */
+  @apply flex flex-col justify-center items-center;
+}
+
+.timeFont {
+  @apply font-sans text-6xl;
+}

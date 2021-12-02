@@ -47,12 +47,12 @@ const Timer = () => {
     };
   }, [isActive, minutes, seconds]);
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="finalCountdown">
       <div>
         {minutes === 0 && seconds === 0 ? (
           <h1>Start Timer</h1>
         ) : (
-          <h1 className="font-sans text-6xl">
+          <h1 className="timeFont">
             {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
           </h1>
         )}
