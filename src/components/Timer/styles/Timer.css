@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 .finalCountdown {
-  @apply flex flex-col justify-center items-center;
+  @apply flex 
+  flex-col 
+  justify-center 
+  items-center;
 }
 
 .timeFont {
-  @apply font-sans text-6xl;
+  @apply font-sans 
+  text-6xl;
 }

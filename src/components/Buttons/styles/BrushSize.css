@@ -3,11 +3,17 @@
 @tailwind utilities;
 
 .btnDiv {
-  @apply flex justify-center col-span-2 m-2;
+  @apply flex 
+  justify-center 
+  col-span-2 
+  m-2;
 }
 
 .brushSizeButtons {
-  @apply rounded-lg focus:ring-2 focus:ring-inset focus:ring-purple;
+  @apply rounded-lg 
+  focus:ring-2 
+  focus:ring-inset 
+  focus:ring-purple;
 }
 
 .btImage {
@@ -20,13 +26,19 @@
 }
 
 .btSmall {
-  @apply h-12 w-12 m-4;
+  @apply h-12 
+  w-12 
+  m-4;
 }
 
 .btMed {
-  @apply h-16 w-16 m-4;
+  @apply h-16 
+  w-16 
+  m-4;
 }
 
 .btLg {
-  @apply h-20 w-20 m-4;
+  @apply h-20 
+  w-20 
+  m-4;
 }
