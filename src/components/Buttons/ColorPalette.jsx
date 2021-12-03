@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/ColorPalette.module.css';
+import './styles/ColorPalette.css';
 
 const ColorPalette = ({ pickColor, brushColor, setBrushColor }) => {
   const colors = [
@@ -18,13 +18,7 @@ const ColorPalette = ({ pickColor, brushColor, setBrushColor }) => {
 
   return (
     <>
-      <div
-        className="
-        flex
-    flex-col
-    w-2  
-   col-start-3 row-start-1 row-span-3 w-24 rounded-lg bg-gray-100 bg-opacity-25"
-      >
+      <div className="colorContainer">
         {colors.map((color) => {
           let thisColor = { background: color };
 
@@ -32,15 +26,7 @@ const ColorPalette = ({ pickColor, brushColor, setBrushColor }) => {
             <div>
               <button
                 key={color}
-                className=" flex justify-items-end w-14
-              h-10
-              m-4
-              rounded-lg
-               transition 
-              duration-150 
-              ease-in-out 
-              transform hover:-translate-y-1 hover:scale-120
-              focus:ring-4 focus:ring-purple"
+                className="colorBtn"
                 style={thisColor}
                 onClick={() => {
                   handleColorPick(color);

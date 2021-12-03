@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.drawMain {
+  @apply h-screen
+  bg-background 
+  bg-center
+  bg-no-repeat 
+  bg-cover
+  bg-fixed
+  overflow-hidden;
+}
+
+.centerDiv {
+  @apply min-h-screen 
+  flex 
+  items-center 
+  justify-center;
+}
+
+.mainGrid {
+  @apply grid 
+    grid-cols-3 
+    grid-rows-5 
+    mb-20;
+}
+
+.titleImg {
+  @apply h-72 
+    w-80
+    col-span-1;
+}
+
+.timerGrid {
+  @apply col-start-2;
+}
+
+.controlBtnGrid {
+  @apply col-start-2 
+    col-span-2 
+    row-span-5;
+}
+
+.canvasGrid {
+  @apply bg-offwhite 
+    border-8 
+    border-yellow 
+    border-dashed 
+    rounded-xl 
+    shadow 
+    col-start-2 
+    col-span-2 
+    row-span-5;
+}
+
+.sidebarGrid {
+  @apply row-start-2 
+    row-span-4;
+}
+
+.sidebarContainer {
+  @apply grid 
+    grid-cols-3;
+}
+
+.cactusImg {
+  @apply col-start-1 
+    col-span-2 
+    row-span-4 
+    h-auto;
+}
+
+.colorGrid {
+  @apply row-span-3;
+}

@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.colorContainer {
+  @apply flex
+  flex-col
+  w-2  
+ col-start-3 row-start-1 row-span-3 w-24 rounded-lg bg-gray-100 bg-opacity-25;
+}
+
+.colorBtn {
+  @apply flex justify-items-end w-14
+  h-10
+  m-4
+  rounded-lg
+   transition 
+  duration-150 
+  ease-in-out 
+  transform hover:-translate-y-1 hover:scale-110
+  focus:ring-4 focus:ring-purple;
+}
+
+input[type='color'] {
+  @apply w-14
+  h-12
+  m-4
+  rounded-lg;
+
+  background: linear-gradient(
+    to bottom right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    violet
+  );
+}
