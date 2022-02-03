@@ -6,7 +6,7 @@ describe.skip('Gallery page tests', () => {
     it('looks for the navbar on the Gallery page', async () => {
         render(<Gallery />);
 
-        const navbar = await screen.findByText('Home');
+        const navbar = await screen.findByText('Gallery Page');
         expect(navbar).toMatchSnapshot();
     });
 });

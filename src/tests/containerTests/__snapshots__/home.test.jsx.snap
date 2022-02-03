@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`home page tests looks for the navbar on the Home page 1`] = `
+Array [
+  <img
+    alt="Quick on the Draw"
+    class="titleImage"
+    src="QuickTitle.png"
+  />,
+]
+`;

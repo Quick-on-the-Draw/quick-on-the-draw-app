@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Canvas page tests looks for the navbar on the Canvas page 1`] = `
+<img
+  alt="Save Button"
+  class="save"
+  src="save.png"
+/>
+`;
