@@ -30,7 +30,7 @@ describe.skip('Api tests', () => {
         });
     });
 
-    xit('calls the getDrawings function', async () => {
+    it('calls the getDrawings function', async () => {
         const res = await getDrawings();
 
         expect(res.body).toEqual(
